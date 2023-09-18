@@ -1,0 +1,20 @@
+.mezarImg{
+    display: block;
+max-width: 700px;
+max-height: 500px;
+margin: auto;
+margin-top: 20px;
+}
+.mezarTitle{
+
+    text-align: center;
+    color: #191919;
+    margin-top: 20px;
+}
+.mezarMetin{
+   
+    color: #191919;
+    font-size: 18px;
+    text-align: center;
+
+}

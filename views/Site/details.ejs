@@ -1,0 +1,24 @@
+<%- include('../Particals/header.ejs') %>
+
+<div class="container" style="max-width: 900px; margin: auto;">
+   <div class="row">
+      <div class="col-12 col-sm-12 col-lg-6" style="display: flex; align-items: center;">
+         <img class="mezarImg" src=<%= img %> alt="" />
+      </div>
+      <div class="col-12 col-sm-12 col-lg-6" style="display: flex; align-items: center; justify-content: center;" >
+         <div>
+            <h1 class="mezarTitle">
+               <%= baslik %>
+            </h1>
+            <p class="mezarMetin"><%= translate %></p>
+               <hr>
+            <p class="container mezarMetin"><%= hakkinda %></p>
+           
+         </div>
+      </div>
+
+   </div>
+</div>
+
+     
+   <%- include('../Particals/footer.ejs') %>

@@ -1,0 +1,32 @@
+<%- include('../Particals/header.ejs') %>
+<%- include('../Particals/adminNav.ejs') %>
+
+<div id="all"  class="container">
+    <div class="row">
+
+        <% veri.forEach(function(item) { %>
+            <div class="listeData col-12 col-sm-12 col-md-6 col-xl-4">
+                <div class="realdata">
+                    <div class="left">
+                        <h6><%= item.esertitle %></h6>
+                        <p><%= item.city %> <%= item.town %> <%= item.adress %></p>
+                       
+                   
+                    </div>
+                    <a href="/admin/<%= item.city %>/<%= item.town %>/<%= item.id %>">
+                    <div class="right"><i class="bi bi-arrow-right-square-fill"></i></div>
+                </a>
+                </div>
+            </div>
+           
+        <% }); %>
+    
+
+
+    </div>
+
+
+
+
+</div>
+    <%- include('../Particals/footer.ejs') %>

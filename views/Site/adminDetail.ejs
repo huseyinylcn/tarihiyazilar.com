@@ -1,0 +1,55 @@
+<%- include('../Particals/header.ejs') %>
+<%- include('../Particals/adminNav.ejs') %>
+
+<form class="adminList"  method="POST" , action="/admin/guncelle" enctype="multipart/form-data">
+    
+    <img style="max-width: 300px;" class="AdminDetaiOrtak" src="<%=veri.qrimgpath%>" alt="">
+
+<img style="max-width: 300px;" class="AdminDetaiOrtak" src="<%=veri.mezarimgpath%>" alt="">
+<br>
+<label class="AdminDetaiOrtak" >Fotoğrafı Değiştir</label>
+<input class="AdminDetaiOrtak" type="file" name="image" accept="image/*"  >
+
+
+    <label class="AdminDetaiOrtak">Sehir</label>
+    <input class="AdminDetaiOrtak" name="city" type="text" placeholder="Sehir" value="<%=veri.city%>">
+
+<label class="AdminDetaiOrtak" >İlçe</label>
+<input class="AdminDetaiOrtak" name="town" type="text" placeholder="İlçe" value="<%=veri.town%>">
+
+<label class="AdminDetaiOrtak" >Mahalle Ve adres Tarifi</label>
+<textarea class="AdminDetaiOrtak" name="adress" id="" cols="30" rows="3"><%=veri.adress%></textarea>
+
+
+<label class="AdminDetaiOrtak" for="">Ekleyen Kullanıcı</label>
+<p style="width: 250px; height: 40px; border: 1px solid black;" class="AdminDetaiOrtak" ><%=veri.addname%></p>
+
+<label class="AdminDetaiOrtak">Eserin Adı</label>
+<textarea class="AdminDetaiOrtak"name="esertitle" id="" cols="30" rows="3"><%=veri.esertitle%></textarea>
+
+<label class="AdminDetaiOrtak">Eserin Cevirisi</label>
+<textarea class="AdminDetaiOrtak" name="esertranslate" id="" cols="30" rows="3"><%=veri.esertarnslate%></textarea>
+
+<label class="AdminDetaiOrtak" >Eser Hakkında Bilgi </label>
+<textarea class="AdminDetaiOrtak" name="eserhakkinda" id="" cols="30" rows="3"><%=veri.eserhakkinda%></textarea>
+<label class="AdminDetaiOrtak" >AKtif Kontrol</label>
+<input class="AdminDetaiOrtak" name="active" type="number" value="<%=veri.active%>">
+
+<br><br>
+
+
+<button class="AdminDetaiOrtak p-2" type="submit">Güncelle</button>
+
+
+<input style="display: none;" type="text" name="guncelyol" value="<%=veri.mezarimgpath%>">
+<input style="display: none;" type="text" name="id" value="<%=veri.id%>">
+
+
+
+
+</form>
+
+
+
+
+    <%- include('../Particals/footer.ejs') %>
