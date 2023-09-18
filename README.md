@@ -7,6 +7,8 @@ daha sonra app.js te üst kısımda mssql bağlantı biliglerinizi girin
 
 projenin kök dizinine gelerek npm install komutunu çalıştırın bu komut gerekli kütüphaneleri yükleyecektir
 
+node app komutu ile uygulamayı çalıştırın
+
 app.js te listen kısmında belirtiğiniz porttan uygulamaya girebilirsiniz 
 
 localhost/admin/739f6d87048e4b3951d9d59acfaf441dd0a45fa43d6f4df9fb89b4659ea10afb adresinden yönetim sayfasına ulaşabilirsiniz 
