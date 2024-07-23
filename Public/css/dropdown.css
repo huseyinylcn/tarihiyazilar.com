@@ -1,0 +1,17 @@
+.selecttranslate{
+    background-color: transparent;
+
+color: white;
+border: none;
+font-size: 23px;
+}
+
+.selecttranslate option{
+    background-color: rgb(7, 7, 65);
+    color: white;
+    font-size: 23px;
+    border: none;
+
+
+}
+

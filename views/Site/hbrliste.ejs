@@ -1,0 +1,37 @@
+<%- include('../Particals/header.ejs') %>
+<div  id="box1" " >
+<%- include('../Particals/nav.ejs') %>
+<div class="container">
+    <div class="row">
+
+        <% veri.forEach(function(item) { %>
+
+            <div class="hbBox col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <a href="/haberekle/duzenle/tt/<%= item.id %>">
+                <div class="kose">
+                    <div class="resimkutu">
+                        <img class="hbBoxImg"
+                            src="<%= item.kapakfotograf %>"
+                            alt="">
+                    </div>
+                    <p><%= item.baslik %></p>
+                </div>
+            </a>
+            </div>
+
+           
+        <% }); %>
+
+
+
+    
+
+
+
+    </div>
+</div>
+
+</div>
+
+    <br>
+    <%- include('../Particals/footer.ejs') %>

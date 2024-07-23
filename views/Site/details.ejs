@@ -1,9 +1,21 @@
 <%- include('../Particals/header.ejs') %>
 
+
+<div  id="b" class="pb-2 bg-dark" style="border-radius: 0; " >
+   <%- include('../Particals/nav.ejs') %>
+   
+     
+   
+   </div>
+<br>
+
+
 <div class="container" style="max-width: 900px; margin: auto;">
    <div class="row">
       <div class="col-12 col-sm-12 col-lg-6" style="display: flex; align-items: center;">
-         <img class="mezarImg" src=<%= img %> alt="" />
+         <img data-enlargable="fullImage" class="mezarImg" src="/custompath/<%= img %>" alt="" />
+         
+
       </div>
       <div class="col-12 col-sm-12 col-lg-6" style="display: flex; align-items: center; justify-content: center;" >
          <div>
@@ -19,6 +31,6 @@
 
    </div>
 </div>
-
+<br><br>
      
    <%- include('../Particals/footer.ejs') %>

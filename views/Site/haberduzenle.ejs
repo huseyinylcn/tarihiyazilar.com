@@ -1,0 +1,133 @@
+<%- include('../Particals/header.ejs') %>
+
+
+
+
+    <button id="draggableDiv"><i class="bi bi-patch-plus-fill"></i></button>
+    <div id="eklemekutu">
+        <button class="eklemebtnleri" id="paragraf">Paragraf</button>
+        <button class="eklemebtnleri" id="fotograf">Fotoğraf</button>
+        <button class="eklemebtnleri" id="liste">Liste</button>
+        <button class="eklemebtnleri" id="pBaslik">Baslık</button>
+        <button class="eklemebtnleri" id="fotoekle"> Foto Ekle</button>
+        <button class="eklemebtnleri" id="kaydet">Güncelle</button>
+        <button class="eklemebtnleri" onclick="habersil(event)">Haberi Sil</button>
+
+
+
+    </div>
+
+    <div id="fotoeklemekutu" class="">
+
+        <form id="uploadForm">
+            <input type="file" id="resiminput" name="resiminput" class="d-block m-auto w-75 mt-2">
+
+            <button type="button" id="resimEkle" class="d-block m-auto w-75 mt-2">Ekle</button>
+            <p class="t-center" id="fotodurum"></p>
+        </form>
+    </div>
+
+    
+        <div id="seceneklerKutusu">
+          <div class="secimbutonlari">
+            <button>Ekle</button>
+            <button class="close" onclick="sill(event) " >Kaldır</button>
+            <button id="fotogel" onclick="fotoboxac(event) ">Fotoğraflar</button>
+    
+            <button onclick="kapatt(event)" id="seceneklerKutusukapat" style="position: absolute; right: 40px" class="close">
+              Kapat
+            </button>
+          </div>
+          <div id="fotografkutusu"></div>
+    
+    <textarea  onchange="inputekleme(event)" id="inputText" cols="30" rows="4" class="col-12 p-2 fs-5 rounded-3"></textarea>
+    
+    <div class="cssler col-12 ">
+        <button id="varsayilan">Varsayılan</button>
+        <button id="yazirenk">Metin Renk 
+            <div id="renkler">
+            <span onclick="renkBoxF(event)" class="renkBox bg-primary">text-primary</span>
+            <span onclick="renkBoxF(event)" class="renkBox bg-secondary">text-secondary</span>
+            <span onclick="renkBoxF(event)" class="renkBox bg-success">text-success</span>
+            <span onclick="renkBoxF(event)" class="renkBox bg-danger">text-danger</span>
+            <span onclick="renkBoxF(event)" class="renkBox bg-warning">text-warning</span>
+            <span onclick="renkBoxF(event)" class="renkBox bg-info">text-info</span>
+            <span onclick="renkBoxF(event)" class="renkBox bg-light">text-light</span>
+            <span onclick="renkBoxF(event)" class="renkBox bg-dark">text-dark</span>
+            <span onclick="renkBoxF(event)" class="renkBox bg-white">text-white</span>
+          </div></button>
+        <button id="genislik">Genişlik
+            <div id="gnslkBox">
+                <span onclick="gnslkF(event)">genislik-1</span>
+                <span onclick="gnslkF(event)">genislik-2</span>
+                <span onclick="gnslkF(event)">genislik-3</span>
+                <span onclick="gnslkF(event)">genislik-4</span>
+            
+              </div>
+        </button>
+        <button id="hazircss">Hazır Stil
+            <div id="hazirStilBox"></div>
+        </button>
+        </div>
+    <textarea  onchange="classekleme(event)" id="classekleme"  cols="30" rows="2" class="col-12 p-2 fs-5 rounded-3"></textarea>
+    
+        </div>
+    
+    
+
+    <div id="box1">
+
+  
+        <%- include('../Particals/nav.ejs') %>
+
+        <div id="html" class="container">
+
+
+            <%= veri.html %>
+
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <h5 class="mt-5 text-light" >Bu kısım Kapak fotoğradır Lütfen Bu kısmı Atlamyın </h5>
+                <div class="hbBox col-xl-3 col-lg-3 col-md-4 col-sm-12 ">
+                    
+                    <div class="kose">
+                        <div class="resimkutu">
+                            <img id="kapakfoto" onclick="etiketimg(event)" class="hbBoxImg" src="<%= veri.kapakfotograf %>" alt="">
+                        </div>
+                        <p id="kapaktitle" onclick="etiket(event)"><%= veri.baslik %></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+
+     
+    </div>
+
+
+
+
+
+    <script>
+        let htmlHtnl = document.getElementById('html')
+
+        var decodedHTML = new DOMParser().parseFromString('<!doctype html><body>' + htmlHtnl.innerHTML, 'text/html').body.textContent;
+
+
+        htmlHtnl.innerHTML = decodedHTML
+
+
+    </script>
+
+
+
+
+    <script src="/js/haberguncellme.js"></script>
+
+
+
+    <%- include('../Particals/footer.ejs') %>

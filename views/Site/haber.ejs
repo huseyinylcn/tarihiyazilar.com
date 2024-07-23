@@ -1,0 +1,108 @@
+<%- include('../Particals/header.ejs') %>
+
+
+    <div id="box1" class="pb-2" style="border-radius: 0; ">
+        <%- include('../Particals/nav.ejs') %>
+
+ 
+            <div class="container ">
+
+                <div class="row p-2">
+                    <div class="UstHaber d-block d-lg-block col-xl-4 col-lg-4 d-md-none d-none">
+                        <h2>Uluslararası Stratejik İletişim Zirvesi yarın başlıyor.</h2>
+                        <h5>İletişim Başkanlığı tarafından bu yıl üçüncüsü düzenlenen Uluslararası Stratejik İletişim Zirvesi (Stratcom Summit) 23-24 Kasım'da İstanbul'da yapılacak</h5>
+
+                    </div>
+                    <div class="ortahaber col-xl-8 col-lg-8 col-md-12">
+                        <div id="gitbtnhbr">
+                            <a href="/haber/"><i id="gitbtnhbrico" class="bi bi-arrow-right-circle-fill"></i></a>
+                        </div>
+                        <img
+                            src="https://static.srpcdigital.com/styles/1037xauto/public/2023-11/AA-20231125-33024136-33024133-CUMHURBASKANLIGI_ILETISIM_BASKANI_FAHRETTIN_ALTUN.jpg"
+                            alt="">
+                        
+                        </div>
+                    <div class="altHaber col-md-12 col-sm-12 d-lg-none d-md-block">
+                        <h2>Uluslararası Stratejik İletişim Zirvesi yarın başlıyor.</h2>
+                        <p>İletişim Başkanlığı tarafından bu yıl üçüncüsü düzenlenen Uluslararası Stratejik İletişim Zirvesi (Stratcom Summit) 23-24 Kasım'da İstanbul'da yapılacak</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+
+                    <% veri.forEach(function(item) { %>
+
+                        <div class="hbBox col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                            <a href="/haber/<%= item.id %>">
+                            <div class="kose">
+                                <div class="resimkutu">
+                                    <img class="hbBoxImg"
+                                        src="<%= item.kapakfotograf %>"
+                                        alt="">
+                                </div>
+                                <p><%= item.baslik %></p>
+                            </div>
+                        </a>
+                        </div>
+    
+                       
+                    <% }); %>
+
+
+
+                
+
+
+
+                </div>
+            </div>
+
+
+    </div>
+
+
+    <script>
+        let imgBo = document.getElementsByClassName('hbBoxImg')
+
+        let funcbox = ()=>{
+            let x = window.innerWidth
+            if (x < 768) {
+                document.getElementsByClassName('resimkutu')[0].style.height = '300px'
+                for (let i = 0; i < imgBo.length; i++) {
+                    imgBo[i].style.height = '300px'
+
+                }
+            }
+            if (x > 768 && x < 1200) {
+                document.getElementsByClassName('resimkutu')[0].style.height = '160px'
+                for (let i = 0; i < imgBo.length; i++) {
+                    imgBo[i].style.height = '160px'
+                }
+
+            }
+            if (x > 1200 && x < 1400) {
+                document.getElementsByClassName('resimkutu')[0].style.height = '200px'
+                for (let i = 0; i < imgBo.length; i++) {
+                    imgBo[i].style.height = '200px'
+                }
+
+            }
+            if (x > 1400) {
+                document.getElementsByClassName('resimkutu')[0].style.height = '220px'
+                for (let i = 0; i < imgBo.length; i++) {
+                    imgBo[i].style.height = '220px'
+                }
+
+            }
+        }
+        
+        funcbox()
+        window.addEventListener('resize', funcbox)
+    </script>
+
+    <%- include('../Particals/footer.ejs') %>

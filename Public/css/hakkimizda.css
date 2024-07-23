@@ -1,0 +1,300 @@
+a{
+    text-decoration: none;
+}
+.scene {
+    margin: 40px 0;
+    position: relative;
+    width: 150px;
+    height: 170px;
+    margin: 0px auto;
+    margin-top: 40px;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .carousel__cell {
+    position: absolute;
+    width: 140px;
+    height: 150px;
+    left: 10px;
+    top: 10px;
+    /* border: 2px solid black; */
+    line-height: 116px;
+    font-size: 80px;
+    font-weight: bold;
+    /* color: white; */
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+  }
+  
+/*   
+  .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+  .carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+  .carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
+  .carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+  .carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+  .carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+  .carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+  .carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+  .carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+  
+   */
+  
+  .carousel-options {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    /* background: hsla(0, 0%, 100%, 0.8); */
+    display:none
+     
+  
+  }
+  
+  .carousel__cell img{
+      height: 170px;
+      width: 100%;
+  }
+  /*? 3d carousel kısmı start */
+  
+
+
+  .kimimben{
+    width: 100%;
+ 
+}
+
+.hakkimizdaimg{
+    border-radius: 50%;
+}
+.kimimben span{
+    font-weight: 600;
+    font-size: 30px;
+}
+.kimimben h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+    width: 240px;
+    border-bottom: 3px solid rgb(247, 247, 247);
+    margin: auto;
+    margin-bottom: 10px;
+  
+}
+.kimimben ul{
+    text-align: left;
+    color: rgb(154, 153, 153);
+    font-size: 15px;
+}
+.kimimben b{
+    font-weight: 500;
+    color: rgb(205, 205, 205);
+    text-transform: capitalize;
+}
+
+
+
+.boxMisyon{
+    /* padding: 40px 0; */
+    text-align: center;
+  }
+  .boxMisyon h3{
+    font-size: 26px;
+    color: white;
+   
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+  .boxMisyon p{
+    color: rgb(168, 168, 168);
+    font-size: 17px;
+    
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .boxMisyon i{
+    font-size: 44px;
+    color: orangered;
+  }
+  .misyon{
+    width: 100%;
+    max-width: 550px;
+    /* padding: 10px; */
+    margin: auto;
+  }
+  .vizyon{
+    width: 100%;
+    /* padding: 10px; */
+    max-width: 550px;
+    margin: auto;
+  
+  
+  }
+
+  
+
+
+
+
+
+
+
+  
+.counter {
+  overflow: hidden;
+  position: relative;
+}
+#rtty{
+  height: 100px;
+}
+.img img{
+  width: 350px;
+  border-radius: 30px;
+}
+.counter:before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  opacity: .90;
+  background-image: url('../img/Main/tecrube.jpg');
+  background-color: #213940fc;
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  top: -20%;
+  left: -20%;
+  filter: contrast(70%);
+}
+
+.counter .content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.counter .content .count-item {
+  height: 300px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.counter .content .count-item.decoration-bottom {
+  position: relative;
+}
+
+.counter .content .count-item.decoration-bottom:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 32px;
+  top: 120px;
+  left: 70%;
+  background: url(../img/Main/circle-dec.png) center center no-repeat;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item.decoration-top {
+  position: relative;
+}
+
+.counter .content .count-item.decoration-top:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 32px;
+  top: 140px;
+  left: 70%;
+  background: url(../img/Main/circle-dec.png) center center no-repeat;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item:hover strong {
+  margin-top: 110px;
+}
+
+.counter .content .count-item strong {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+  color: #fff;
+  margin-top: 120px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item span {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.25px;
+}
+
+@media (max-width: 991px) {
+  .parallax {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: auto;
+  }
+  .parallax .content {
+    position: relative !important;
+    top: 0% !important;
+    transform: perspective(1px) translateY(0%) !important;
+  }
+  .counter {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .counter .content {
+    position: relative !important;
+    top: 0% !important;
+    transform: perspective(1px) translateY(0%) !important;
+  }
+  .counter .content .count-item {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .counter .content .count-item:hover strong {
+    margin-top: 0px;
+  }
+  .counter .content .count-item:before {
+    display: none;
+  }
+  .counter .content .count-item:after {
+    display: none;
+  }
+  .counter .content .count-item strong {
+    margin-top: 0px;
+  }
+}
+
+/* artan müşteri memnuniyeti kısmı stop */
+

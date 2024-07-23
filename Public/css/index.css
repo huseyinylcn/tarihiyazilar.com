@@ -1,40 +1,356 @@
-.mainTitle{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://media.istockphoto.com/id/1253590992/tr/vekt%C3%B6r/arka-plan-i%C3%A7in-a%C3%A7%C4%B1k-mavi-basit-pastel-yumu%C5%9Fak-renk-duvar-ka%C4%9F%C4%B1d%C4%B1-i%C3%A7in-mavi-d%C3%BCz-renk-mavi.jpg?s=170667a&w=0&k=20&c=BLOdB3SVXms_DEB07IIYDsTvtaDr5o1gp_DG3LRXxlg=');
+}
+
+#box1 {
+    background-image: url('https://www.dufy.com.tr/Uploads/VaryasyonResim/0b5e9a39-6ab0-4f73-823f-378253b2681f.jpg');
+    width: 100%;
+
+    border-bottom-right-radius: 150px 145px;
+
+}
+
+#box2 {
+    background-image: url('https://www.dufy.com.tr/Uploads/VaryasyonResim/0b5e9a39-6ab0-4f73-823f-378253b2681f.jpg');
+    width: 100%;
+
+
+
+}
+
+#box3 {
+    background-image: url('https://media.istockphoto.com/id/1253590992/tr/vekt%C3%B6r/arka-plan-i%C3%A7in-a%C3%A7%C4%B1k-mavi-basit-pastel-yumu%C5%9Fak-renk-duvar-ka%C4%9F%C4%B1d%C4%B1-i%C3%A7in-mavi-d%C3%BCz-renk-mavi.jpg?s=170667a&w=0&k=20&c=BLOdB3SVXms_DEB07IIYDsTvtaDr5o1gp_DG3LRXxlg=');
+    width: 100%;
+
+    border-top-left-radius: 170px 195px;
+
+    border-bottom-right-radius: 170px 195px;
+
+
+}
+
+#box4 {
+    background-image: url('https://www.dufy.com.tr/Uploads/VaryasyonResim/0b5e9a39-6ab0-4f73-823f-378253b2681f.jpg');
+    width: 100%;
+
+    border-top-left-radius: 150px 195px;
+    border-bottom-left-radius: 150px 195px;
+
+
+}
+
+#box5 {
+    background-image: url('https://www.dufy.com.tr/Uploads/VaryasyonResim/0b5e9a39-6ab0-4f73-823f-378253b2681f.jpg');
+    width: 100%;
+    height: 30px;
+
+
+}
+
+#box6 {
+    background-image: url('https://media.istockphoto.com/id/1253590992/tr/vekt%C3%B6r/arka-plan-i%C3%A7in-a%C3%A7%C4%B1k-mavi-basit-pastel-yumu%C5%9Fak-renk-duvar-ka%C4%9F%C4%B1d%C4%B1-i%C3%A7in-mavi-d%C3%BCz-renk-mavi.jpg?s=170667a&w=0&k=20&c=BLOdB3SVXms_DEB07IIYDsTvtaDr5o1gp_DG3LRXxlg=');
+    width: 100%;
+    height: 30px;
+    border-top-right-radius: 170px 195px;
+
+
+
+
+}
+
+#bottom-nav {
+    display: flex;
+    height: 70px;
+    position: relative;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+#bottom-nav ul {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    /* min-width: 950px; */
+    /* margin-left: 15%; */
+
+
+}
+#bottom-nav i {
+
+    color: white;
+    font-size: 25px;
+
+
+}
+
+#bottom-nav ul li {
+    /* margin: 0 6px; */
+    padding: 0 25px;
+/* min-width: 100px; */
+    letter-spacing: 1.4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    /* border: 1px solid white; */
     text-align: center;
-    margin-top: 30px;
-    text-transform: uppercase;
+}
+
+#top-nav {
+    width: 100%;
+    height: 40px;
+    background: #191919;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.top-nav {
+    width: 100%;
+    height: 42px;
+    background: #191919;
+    border-bottom: 3px solid white;
+  
+}
+
+#nav-ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+#nav-ul li {
+    margin: 0 20px;
+    font-size: 12px;
+    color: rgb(181, 179, 179);
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-first-p {
+    color: white;
+    font-size: 40px;
     font-weight: 700;
- 
+    font-family: Arial, Helvetica, sans-serif;
+
 }
-.explanation{
-    font-size: 18px;
-    text-align: center;
-    color: #191919;
+
+#nav-first-p span {
+    color: orangered;
+    font-size: 40px;
+    font-weight: 800;
+
 }
-.explanationImg{
-    display: block;
-    width: 80%;
+
+#nav-last-p {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-last-p span {
+
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+#nav-button {
+    width: 350px;
+    height: 50px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+#nav-button:hover {
+    border: 1px solid rgb(159, 155, 155);
+    color: rgb(159, 155, 155);
+    font-size: 16px;
+
+}
+
+#nav-img {
+    width: 100%;
+
     margin: auto;
-    border: 1px solid #191919;
-    border-radius: 9px;
-}
-.hedeflerimiz{
-    text-transform: uppercase;
     text-align: center;
-    font-weight: 700;
+}
+
+#nav-img img {
+    width: 60%;
+    max-width: 340px;
+    margin: auto;
+    text-align: center;
+}
+
+#nav-img-right img {
+    width: 100%;
+    max-width: 340px;
+    margin: auto;
+    text-align: center;
+}
+
+/* .middle{
+    margin-top: 100px;
+} */
+#gel {
+    text-align: center;
+
+}
+
+.nav-card i {
+    color: orangered;
+    font-size: 70px;
     margin-top: 30px;
+    margin-bottom: 14px;
+
 }
-.hedeflerimizExplation{
-    font-size: 18px;
+
+.nav-card {
+
     text-align: center;
-    color: #191919;
+    height: 300px;
+    width: 400px;
+    margin: auto;
+}
+.nav-card p{
+
+    color: rgb(123, 123, 123);
+}
+.nav-card h4{
+
+    color: rgb(169, 169, 169);
 }
 
-.mvTitle{
-    font-weight: 500;
-    color: #191918;
-}
-.mv{
-    font-size: 18px;
-    color: #191919;
+#bars {
+    line-height: 40px;
+    font-size: 25px;
+    color: rgb(218, 216, 216);
+    margin-left: 20px;
+    transition: 0.7s;
 
+}
+
+#bars:hover {
+    color: rgb(244, 241, 241);
+
+}
+
+#barsid {
+    display: flex;
+}
+
+#barsid img {
+    height: 30px;
+    
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#small-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 360px;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-100%);
+    z-index: 100;
+}
+
+#small-nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    background: #191919;
+}
+
+#small-nav ul li {
+    height: 50px;
+    width: 96%;
+    color: rgb(216, 216, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    transition: 0.3s;
+
+}
+
+#small-nav ul li:hover {
+    color: #919191;
+}
+
+.information1 img {
+    width: 55%;
+    margin: auto;
+
+    max-width: 400px;
+
+}
+
+.information1 {
+    text-align: center;
+}
+
+.information2 div {
+    text-align: left;
+    width: 95%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 75px;
+}
+
+.information2 div p {
+    font-size: 20px;
+}
+
+.information2 h2 {
+    font-size: 45px;
+    color: black;
+
+}
+
+#box4 img {
+    width: 80%;
+    display: block;
+    margin: auto;
+   
+ 
+
+}
+
+.bilgi4 h2 {
+    color: rgb(183, 183, 183);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+   
+
+}
+
+.bilgi4 p {
+    color: rgb(183, 183, 183);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bilgi5 p {
+    color: rgb(132, 132, 132);
+    font-size: 16px;
+    margin-bottom: 20px;
 }

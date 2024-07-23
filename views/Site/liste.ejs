@@ -1,9 +1,17 @@
 <%- include('../Particals/header.ejs') %>
+
+<div  id="b" class="pb-2 bg-dark" style="border-radius: 0; " >
+    <%- include('../Particals/nav.ejs') %>
+    
+      
+    
+    </div>
+<br>
     <div id="all" class="container">
         <div class="row">
 
             <% veri.forEach(function(item) { %>
-                <div class="listeData col-12 col-xsm-12 col-md-6 col-xl-4">
+                <div class="listeData col-12 col-xsm-12 col-md-6 col-xl-4 mt-2">
                     <div class="realdata">
                         <div class="left">
                             <h6><%= item.esertitle %></h6>
@@ -27,4 +35,5 @@
 
 
     </div>
+    <br><br><br><br><br>
     <%- include('../Particals/footer.ejs') %>

@@ -1,81 +1,130 @@
 <%- include('../Particals/header.ejs') %>
 
-    <div class="container" style="margin-top: 30px;">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-lg-6"  style="display: flex; align-items: center;">
-                <img class="explanationImg" src="/img/Main/mezartas.jpg" alt="">
+
+    <div id="box1">
+
+        <%- include('../Particals/nav.ejs') %>
 
 
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6" style="display: flex; align-items: center;">
-             <div>
-                <h1 class="hedeflerimiz">Hedeflerimiz</h1>
-                <p class="hedeflerimizExplation">Amacımız Türkiye'de bulununan bir çok önemli ama bilinmeyen tarihi
-                    eserleri sizlere Bir Telefon Kadar Yakın etmek.
-                    Bunların Başında Ülkemizdeki Osmanlı Dönemine Ait Mezar Taşları gelmekte. Üzerinde Eski Türkçe İle
-                    Yazılmış Birbirinden Değerli Sözler Bulunmaktadır
-                    ama günümüzde Kullanılan bir dil olmadığı için oknamamakta. Tarihimizin önemli Bir Parcası olan bu
-                    eserleri Okunabilir Hale getirmeyi Kendimize vazife ettik
-                    Geliştirdiğimiz Uygulama sayesinde Eserin Üzerindeki QR kodu okutarak Eserin Üzerinde yazan yazıyı
-                    istediğiniz dilde okuyabilirsiniz
-                    ve Eserin Hakkında detaylı biligiyede uygulamamızdan Ulaşabilirsiniz Bu sayede başta ülkemizin
-                    vatandaşları daha sonra dışarıdan gelen ziyaretçilerimiz olmak üzere
-                    Tarihimizi Daha detaylı inceleyebilirsiniz
 
-                </p>
+        <div class="middle container mt-lg-5">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 d-block d-lg-none" >
+                    <br>
+                    <div id="nav-img">
+                        <img src="/img/Main/indexörn.png" alt="">
+                    </div>
 
-            </div>
-            </div>
-          
-
-        </div>
-    </div>
-
-<hr>
-    <div class="container" style="margin-top: 30px;">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-lg-6 d-flex d-lg-none" style="display: flex; align-items: center;">
-
-                <img class="explanationImg" src="/img/Main/indexörn.png" alt="">
-            </div>
-
-            <div class="col-12 col-sm-12 col-lg-6" style="display: flex; align-items: center;">
-                <div>
-                    <h1 class="mainTitle">Nasıl Kullanılır</h1>
-
-                    <p class="explanation">Telefonunuzda Bulunan Herhangi bir QR kod oyucuyu açarak QR kodu okutun.
-                        Yönlendirilen Sayfada Eserin Foğtoğrafı ve Üzerinde Yazan Eski Türkçe Yazıların
-                        çevirisi Bulunmaktadır. Alt Kısımda ise Eserin Hakkında Bigi Bulunacaktır
-
-                    </p>
                 </div>
-            </div>
-    
-                <div class="col-12 col-sm-12 col-lg-6 d-none d-lg-flex" style="display: flex; align-items: center;">
-    
-                    <img class="explanationImg" src="/img/Main/indexörn.png" alt="">
+                <div class="col-lg-7 col-md-12 ">
+                    <div id="gel">
+                        <p id="nav-first-p"><span>Tarihi </span>Yazıları</p>
+                        <p id="nav-last-p"><span>QR</span> İle Okuyun Geçmişe Yolculuk Yapın</p>
+                        <a href="/liste">
+                        <button id="nav-button">Eserleri Görmek İstiyorum</button></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-md-12 d-none d-lg-block" >
+                    
+                    <div id="nav-img-right">
+                        <img src="/img/Main/indexörn.png" alt="">
+                    </div>
+
                 </div>
 
+            </div>
+        </div>
 
+        <div class=" container">
+            <div class="row" >
+                <div class="nav-card col-4  mb-xl-5">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h4>Önemi !</h4>
+                    <p>Tarihi yazıtları okunabilir hale getirmek, geçmişimizi anlama ve kültürel mirasımızı koruma konusundaki taahhüdümüzün bir yansımasıdır. Bu çalışmalar, tarihimizin zenginliğini ve hikayelerini gelecek nesillere aktarma misyonumuzu yansıtır..</p>
+                </div>
+                <div class="nav-card col-4">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h4>Tanıtım</h4>
+                    <p>Turistler için tarihi yazıtları okumak, seyahatlerini daha derinlemesine anlamlandırarak, yerel kültürü ve tarihini daha yakından deneyimlemelerine yardımcı olur. Aynı zamanda, bu eylem, yerel kültürü ve tarihi daha fazla takdir etmelerini ve saygı duymalarını teşvik eder.</p>
+                </div>
+                <div class="nav-card col-4">
+                    <i class="fa-solid fa-book"></i>
+                    <h4>Araştırma</h4>
+                    <p>Çevrilen eserlerin özenle bir veri tabanında saklanması, araştırmacılara hazır kaynaklar sunmanın ötesinde, bilginin hızla paylaşılmasını ve tarihi mirasın daha kapsamlı bir şekilde incelenmesini sağlar.</p>
+               
+                </div>
+            </div>
+        </div>
+
+   <br>
+    </div>
+    <div id="box2">
+        <div id="box3">
+            <div class="container">
+                <div class="information row ">
+                    <div class="information1 mt-xl-5 col-xl-6 col-lg-12"><img src="/img/Main/mezartas.png" alt=""></div>
+
+                    <div class="information2 mt-xl-5 col-xl-6 col-lg-12">
+                        <div>
+
+
+                            <h2>Tarihi Yazılar</h2>
+                            <p>Biz, Türkiye'nin zengin tarihini canlı ve erişilebilir kılmak için gönüllü gençleriz. Özellikle eski Türkçe ile yazılmış yazıtları ve eserleri modern Türkçe'ye çevirme görevi üstleniyoruz. Bu eserlerin herkes tarafından daha kolay anlaşılabilmesi için QR kodları ekliyoruz. Ama sadece tercüme etmekle yetinmiyor, aynı zamanda bu eserlerin ruhunu, tarihi derinliğini ve kültürel önemini korumaya özen gösteriyoruz.
+                                Sizi tarihin büyüleyici dünyasına davet ediyoruz. Geçmişimizin sayfalarını açarak, unutulmaya yüz tutmuş hikayeleri ve değerleri modern dünyada yeniden hayata döndürmek için buradayız. Tarihi mirasımızı gelecek kuşaklara aktarma misyonunu taşıyor, herkesi bu büyük yolculuğa katılmaya ve tarihimizi daha yakından keşfetmeye davet ediyoruz. Bizimle birlikte bu tarih yolculuğuna çıkın, geçmişimizin hazine dolu dünyasını keşfedin! </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <hr>
-<br>
+    <div id="box4">
+        <div class="container">
+            <div class="row" >
+              
+                <div class=" mt-lg-5 row">
 
-    <div class="container">
-        <div class="row">
-<div class=" col-sm-12 col-md-6" style="text-align: center;  padding: 0 20px;">
-    <h3  class="mvTitle">Misyonumuz</h3>
-    <p class="mv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsam ullam molestias atque voluptatum tempore nesciunt nam nostrum doloremque architecto.</p>
-</div>
-<div class=" col-sm-12 col-md-6"  style="text-align: center; padding: 0 20px;">
-<h3 class="mvTitle">Vizyonumuz</h3>
-<p class="mv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsam ullam molestias atque voluptatum tempore nesciunt nam nostrum doloremque architecto.</p>
-</div>
+                <div class="col-xl-5 col-lg-12 d-block d-lg-none" >
+                
+                    <img class="mt-5 mt-md-0" src="/img/Main/dusun.gif" alt="">
+                </div>
+
+                <div class="bilgi4 col-xl-7 col-lg-12">
+                    <h2>NASIL KULLANILIR</h2>
+                    <p>Telefonunuzda bulunan QR kod okuyucu uygulamasını açın ve QR kodunu taratın. Tarattığınız kod, sizi eserin büyüleyici dünyasına yönlendirecek. Yönlendirildiğiniz sayfada, ilgili eserin muhteşem fotoğrafını göreceksiniz ve üzerinde yazan eski Türkçe yazılar, özenle modern Türkçe'ye çevrildi. Bu sayede, o eserin anlamını daha iyi kavrayacak ve tarihimizin zenginliklerine yolculuk yapacaksınız.</p>
+                    <div class="row">
+                        <div class="bilgi5 col-xl-6 col-lg-12"><p>Sayfanın alt kısmında ise eser hakkında ayrıntılı bilgilere ulaşabileceksiniz. Burada, eserin tarihi, yazarı, kullanıldığı dönem ve daha fazla ilginç detayı öğrenebilirsiniz. Tarihimizin bu hazine dolu sayfalarını keşfetmek için sizi bekliyoruz</p> </div>
+                            
+                        <div class="bilgi5 col-xl-6 col-lg-12">
+                            <p> Geçmişin kapıları QR kodlarıyla açılırken, tarihi eserlerin çevirileriyle kökenlerimize bir yolculuk yapacağız. Bu sayede, geçmişimizi daha derinden anlama fırsatı bulacak ve tarihimizin zenginliklerini keşfetmeye başlayacağız. Her bir QR kodu, bilgi dolu bir maceranın başlangıcıdır. Bu eşsiz deneyimi paylaşmak için buradayız ve sizi bu büyülü yolculuğa davet ediyoruz. </p><p></p>
+                               
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-5 col-lg-12 d-none d-lg-block d-xl-block" >
+                    <img src="/img/Main/dusun.gif" alt="">
+                </div>
+
+
+            </div>
+
+            </div>
+
+        </div>
+<br><br><br><br><br>
+    </div>
+
+    <div id="box5">
+        <div id="box6">
+        
         </div>
     </div>
 
-<br><br>
+
+
+
+
 
 
 

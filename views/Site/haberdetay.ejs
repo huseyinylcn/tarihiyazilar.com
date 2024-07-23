@@ -1,0 +1,36 @@
+<%- include('../Particals/header.ejs') %>
+
+
+
+    <div id="box1" class="pb-2" style="border-radius: 0; ">
+        <%- include('../Particals/nav.ejs') %>
+
+
+
+          
+
+          
+            <!-- kendinbelirlebox -->
+            <div id="html" class="container">
+                <%= data.html %>
+            </div>
+
+
+
+            <script>
+                let HtmL = document.getElementById('html')
+              
+
+             
+
+
+                var decodedHTML = new DOMParser().parseFromString('<!doctype html><body>' + HtmL.innerHTML, 'text/html').body.textContent;
+
+
+                    HtmL.innerHTML = decodedHTML
+
+
+
+            </script>
+
+            <%- include('../Particals/footer.ejs') %>
