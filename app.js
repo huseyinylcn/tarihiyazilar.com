@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/Views/Site')
-
+// merhaba aga
 
 app.use(session({
   secret: '739f6d87048e4b3951d9d59acfaf441dd0a45fa43d6f4df9fb89b4659ea10afb',
